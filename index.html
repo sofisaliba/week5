@@ -3,75 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harry Potter</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/style/normalize.css" />
-    <link
-      rel="schortcut"
-      href="assets/icons/iconharrypotter.svg"
-      type="image/svg"
-    />
-    <style>
-      header,
-      footer {
-        flex: 0 0 content;
-      }
-
-      main {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-      }
-
-      body {
-        display: flex;
-        flex-flow: column;
-        min-height: 100vh;
-      }
-
-      aside {
-        width: 20vh;
-        border: 1px solid black;
-      }
-
-      section {
-        flex: 1;
-        border: 1px solid black;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid black;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="assets/imgs/boat.svg" alt="boat" />
-      </div>
-
-      <nav>
-        <ul class="menu">
-          <li style="display: inline"><a href="#">Наш клуб</a></li>
-          <li style="display: inline"><a href="#">Регаты</a></li>
-          <li style="display: inline"><a href="#">Команда</a></li>
-          <li style="display: inline"><a href="#">Обучение</a></li>
-          <li style="display: inline"><a href="#">Новости</a></li>
-          <li style="display: inline"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section>hi</section>
-      <aside>side</aside>
-    </main>
-
-    <footer>
-      <nav>footer</nav>
-    </footer>
+    <div class="root">
+      <header class="header">
+        <p class="text">[Шапка страницы]</p>
+      </header>
+      <main class="main">
+        <article class="article">
+          <div class="parent">
+            <div class="block"></div>
+            <div class="block"></div>
+          </div>
+          <div class="bigparent">
+            <div class="bigblock"></div>
+          </div>
+        </article>
+        <aside class="aside"></aside>
+      </main>
+      <footer class="footer">
+        <section class="sectionfooter">[Секция футера]</section>
+        <section class="sectionfooter">[Секция футера]</section>
+        <section class="sectionfooter">[Секция футера]</section>
+        <section class="sectionfooter">[Секция футера]</section>
+      </footer>
+    </div>
   </body>
 </html>
