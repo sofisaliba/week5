@@ -3,13 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="assets/style/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Noto+Sans+Mono:wght@300&family=Noto+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="assets/icons/crystal-ball.png" type="image/png">
+    <style>
+      .header {
+        background-color:  rgb(241, 222, 199);
+        height: 60px;
+        display: flex;
+justify-content: space-evenly;
+    align-items: center;
+      }
+
+      .point{
+    display: inline;
+}
+
+ul li a{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #163152;
+    font-style: normal;
+    font-family: 'Marck Script', sans-serif;
+    font-size: larger;
+}
+
+.headerimage{
+    display: flex;
+}
+
+      body{
+        height: 2000px;
+      }
+      
+      .main {
+        padding: 0;
+        display: flex;
+        height: 1600px;
+      }
+
+      .article {
+        background-color: rgb(121, 103, 137);
+        min-height: 400px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .mainpart {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .maintext {
+        height: 10%;
+        margin: 10px;
+      }
+
+      .parent {
+        display: flex;
+        width: 100%;
+        height: 37px;
+        flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    
+      }
+
+      .block {
+        width: 50%;
+        height: 380px;
+        
+      }
+
+      .aside {
+        background-color: rgb(25, 47, 3);
+        min-height: 400px;
+        width: 30%;
+        display: flex ;
+        flex-direction: column;
+      }
+
+      .asidepart {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+.container{
+    width: 100%;
+    height: 1500px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+      .asideimage{
+    width: 25%;
+    background-color: aquamarine;
+    height: 200px;
+    width: 50%;
+}
+
+      .asidetext {
+        height: 10%;
+        margin: 10%;
+      }
+
+      .footer {
+        background-color: rgb(241, 222, 199);
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .sectionfooter {
+        background-color: rgb(239, 229, 229);
+        width: 22%;
+        height: 75%;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .text {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sectionfooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .smalltext {
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+}
+.smalltext, .flytext{
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.smalltext, .flytext:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+    
+
+    
+    </style>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav"></nav>
-    </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <div class="root">
+      <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+              <li class="point"><a href="#magic">&#128062; Магия</a></li><!--Поставила якоря в меню на изображения-->
+              <li class="point"><a href="#death">&#128062; Дары Смерти</a></li>
+              <li class="point"><a href="#friends">&#128062; Дружба</a></li>
+              <li class="point"><a href="#hogsmit">&#128062; Хогсмит</a></li>
+            </ul>
+          </nav>
+          <div class="headerimage">
+            <img style="width: 65px" src="assets/imgs/hogwarts.png" alt="scroll" />
+          </div>
+      </header>
+      <main class="main">
+        <article class="article">
+          <div class="mainpart">
+            <div class="maintext" style="color: antiquewhite; font-family: 'Marck Script', sans-serif; font-size: larger;">Волшебный мир Гарри Поттера &#128171;</div>
+          </div>
+          <div class="parent">
+            <div class="block"><div class="smalltext"><img src="assets/imgs/mohovik.jpg" alt="Моховик" width="284.97px" height="300px" id="magic" class="flytext"></div></div>
+            <div class="block"><div class="smalltext"><img src="assets/imgs/kartini.jpeg" alt="Говорящие картины" width="284.97px" height="300px" id="magic" class="flytext"></div></div>
+           <div class="block"><div class="smalltext"><img src="assets/imgs/buzinayapalochka.jpeg" alt="Бузинная палочка" width="284.97px" height="300px" id="death" class="flytext"></div></div>
+           <div class="block"><div class="smalltext"><img src="assets/imgs/threebrothers.jpeg" alt="Скачка Барда Бидля" width="284.97px" height="300px" id="death" class="flytext"></div></div>
+          
+           <div class="block"><div class="smalltext"><img src="assets/imgs/e5d206db-77af-413d-87fe-fc3423bf8919.jpeg" alt="Рон и Гарри" width="284.97px" height="300px" id="friends" class="flytext"></div></div>
+           <div class="block"><div class="smalltext"><img src="assets/imgs/withhagrit.jpeg" alt="Хагрид" width="284.97px" height="300px" id="friends" class="flytext"></div></div>
+
+           <div class="block"><div class="smalltext"><img src="assets/imgs/photo2.jpeg" alt="Волшебный магазин" width="284.97px" height="300px" id="hogsmit" class="flytext"></div></div>
+           <div class="block"><div class="smalltext"><img src="assets/imgs/The Hogwarts Grounds, Harry Potter.jpeg" alt="Поля" width="284.97px" height="300px" id="hogsmit" class="flytext"></div></div>
+          
+        </article>
+        <aside class="aside">
+          <div class="asidepart">
+            <div class="asidetext" style="color: antiquewhite; font-family: 'Marck Script', sans-serif; font-size: larger;">Любимая троица и Драко &#128525;</div>
+          </div>
+          <div class="container">
+          <div class="asideimage"><img src="assets/imgs/harry.jpeg" alt="Гарри Поттер" height="300px" width="100%"></div>
+          <div class="asideimage"><img src="assets/imgs/hermiona.png" alt="Гермиона Грейнджер" height="300px" width="100%"></div>
+          <div class="asideimage"><img src="assets/imgs/ron.jpeg" alt="Рон Уизли" height="300px" width="100%"></div>
+          <div class="asideimage"><img src="assets/imgs/Draco.jpeg" alt="Драко Малфой" height="300px" width="100%"></div>
+        </div>
+        </aside>
+      </main>
+      <footer class="footer">
+        <div style="font-family: 'Marck Script', sans-serif; font-size: larger;">Сделано с любовью к волшебному миру Гарри Поттера &#128152;</div>
+      </footer>
+    </div>
   </body>
 </html>
